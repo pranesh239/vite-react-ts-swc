@@ -1,0 +1,43 @@
+{
+    "jsc": {
+        // "loose": true,
+        "target": "es2017",
+        "experimental": {
+            // "optimizeHygiene": false,
+            "keepImportAttributes": true,
+            "emitAssertForImportAttributes": true,
+            "disableBuiltinTransformsForInternalTesting": true
+        },
+        "parser": {
+            "syntax": "typescript",
+            "tsx": true,
+            "decorators": false,
+            "dynamicImport": false
+        },
+        "transform": {
+            "react": {
+                "pragma": "React.createElement",
+                "pragmaFrag": "React.Fragment",
+                "throwIfNamespace": true,
+                "development": false,
+                "useBuiltins": false,
+                "runtime": "automatic"
+            },
+            "hidden": {
+                "jest": true
+            }
+        }
+    },
+    "env": {
+        // "externalHelpers": true,
+        // "loose": true
+    },
+    "module": {
+        "type": "es6",
+        "strict": false,
+        "strictMode": false,
+        "lazy": true,
+        "noInterop": false,
+        // "ignoreDynamic": true
+    }
+}
